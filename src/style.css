@@ -1,0 +1,109 @@
+body{
+    background-color: skyblue;
+}
+
+h2{
+    color:white
+}
+
+.err{
+    color:red;
+    font-style: italic;
+    font-size: larger;
+}
+
+.appBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 55px 5px;
+    padding: 0px 10px;
+}
+
+.navbar.bg-body-tertiary{
+    width: 50%;
+    margin: 20px;
+    padding: 0px;
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue;
+}
+
+.card{
+    padding: 20px;
+    background-color: skyblue;
+    border: none;
+    width: 300px;
+    /* border: 1px solid black; */
+    box-shadow: 4.5px 4.5px 10px 3px rgb(6, 4, 4);
+    display: flex;
+    align-items: center;
+}
+
+.liveloc-but{
+    background-color: white;
+    box-shadow: 1.5px 1.5px 8px 1px rgb(6, 4, 4);
+    border-radius: 10px;
+    border: none;
+}
+
+.liveloc-but:hover{
+    background-color: skyblue;
+}
+
+.liveloc-msg{
+    background: linear-gradient(90deg, rgba(0,123,255,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.card img{
+    width: 50%;
+}
+
+.message{
+    color: #1818a0; /* Dark Blue */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: skyblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+@media(max-width: 700px){
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .btn.btn-outline-success{
+        width: 70px;
+        height: 40px;
+        margin: 20px;
+    }
+}
+
+@media(max-width: 300px){
+    .card{
+        width: 230px;
+        align-items: flex-start;
+    }
+    .card img{
+        transform: translate(50%);
+    }
+}
